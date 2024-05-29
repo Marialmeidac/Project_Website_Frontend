@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videoaulas - Catálogo de Videoaulas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Catálogo de Videoaulas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="videoaulas.html">Videoaulas</a></li>
+                <li><a href="usuario.html">Espaço do Usuário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="videos">
+            <h2>Videoaulas</h2>
+            <div class="filters">
+                <label for="subject">Assunto:</label>
+                <select id="subject">
+                    <option value="all">Todos</option>
+                    <option value="matematica">Matemática</option>
+                    <option value="ciencia">Ciências</option>
+                    <option value="historia">História</option>
+                    <!-- Adicione mais opções conforme necessário -->
+                </select>
+
+                <label for="relevance">Relevância:</label>
+                <select id="relevance">
+                    <option value="all">Todas</option>
+                    <option value="high">Alta</option>
+                    <option value="medium">Média</option>
+                    <option value="low">Baixa</option>
+                </select>
+
+                <label for="year">Ano:</label>
+                <input type="number" id="year" min="1930" max="2024" value="2024">
+            </div>
+
+            <div class="video-list">
+                <!-- Exemplo de vídeo -->
+                <div class="video-item">
+                    <h3>Título da Videoaula</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vídeoID" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div class="rating">
+                        <h4>Avaliação dos Usuários</h4>
+                        <p>Nota Média: <span class="average-rating">4.5</span></p>
+                        <p>Comentários:</p>
+                        <ul class="comments">
+                            <li>Ótima explicação, recomendo!</li>
+                            <li>Muito útil para revisar para o exame.</li>
+                            <!-- Adicione mais comentários conforme necessário -->
+                        </ul>
+                        <form class="user-rating">
+                            <label for="rating">Sua Nota:</label>
+                            <input type="number" id="rating" min="1" max="5" required>
+                            <label for="comment">Seu Comentário:</label>
+                            <textarea id="comment" rows="3"></textarea>
+                            <button type="submit">Enviar Avaliação</button>
+                        </form>
+                    </div>
+                    <div class="qa-section">
+                        <h4>Dúvidas e Respostas</h4>
+                        <form class="ask-question">
+                            <label for="question">Faça uma pergunta:</label>
+                            <textarea id="question" rows="3" required></textarea>
+                            <button type="submit">Enviar Pergunta</button>
+                        </form>
+                        <ul class="questions">
+                            <li>
+                                <h5>Usuário 1:</h5>
+                                <p>Como resolvo a questão 3?</p>
+                                <ul class="answers">
+                                    <li><strong>Autor:</strong> Aqui está a resolução...</li>
+                                    <!-- Outras respostas -->
+                                </ul>
+                            </li>
+                            <!-- Outras perguntas e respostas -->
+                        </ul>
+                    </div>
+                    <button class="save-button">Salvar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Catálogo de Videoaulas</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
