@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Videoaulas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: #ddd;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        #welcome {
+            background-color: #444;
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+        }
+
+        #welcome h2 {
+            margin-bottom: 20px;
+        }
+
+        #welcome img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        #highlights {
+            margin-top: 50px;
+        }
+
+        #highlights .video-item {
+            border: 1px solid #666;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #333;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            margin-bottom: 20px;
+        }
+
+        #highlights .video-item h3 {
+            margin-top: 0;
+            color: #fff;
+        }
+
+        #highlights .video-item iframe {
+            width: 100%;
+            height: 250px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #highlights .rating {
+            margin-top: 20px;
+            color: #bbb;
+        }
+
+        #highlights .comments {
+            margin-top: 10px;
+            color: #bbb;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Videoaulas</a></li>
+                <li><a href="#">Espaço do Usuário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome">
+            <h2>Bem-vindo ao Catálogo de Videoaulas</h2>
+            <p>Explore uma variedade de vídeos de aulas sobre diferentes temas educacionais.</p>
+            <img src="welcome_image.jpg" alt="Imagem de boas-vindas">
+        </section>
+
+        <section id="highlights">
+            <h2>Videoaulas em Destaque</h2>
+            <!-- Aqui serão listadas as videoaulas em destaque -->
+            <div class="video-item">
+                <h3>Nome do Vídeo</h3>
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                <p>Aqui vai uma descrição breve do vídeo.</p>
+                <div class="rating">
+                    <p>Classificação: 4.5</p>
+                </div>
+                <div class="comments">
+                    <p>Comentários:</p>
+                    <!-- Aqui serão listados os comentários dos usuários -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Catálogo de Videoaulas</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
